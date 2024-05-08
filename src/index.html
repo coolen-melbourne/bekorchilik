@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .dark {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div class="container mx-auto px-4 py-8 xl:px-0 xl:py-16">
+      <div class="max-w-screen-xl mx-auto bg-transparent rounded-lg">
+        <video
+          class="w-full h-[500px] md:h-64 xl:h-96 object-cover shadow-2xl hover:border-2"
+          autoplay
+          controls
+        >
+          <source
+            src="./video/video_2024-05-08_10-41-58.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <button
+          id="mode"
+          class="bg-slate-300 border rounded-lg w-full md:w-40 xl:w-48 h-12 mt-4 xl:mt-6"
+        >
+          Dark/White Mode
+        </button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
